@@ -1,0 +1,4 @@
+ollama
+pyTelegramBotAPI
+python-dotenv
+requests

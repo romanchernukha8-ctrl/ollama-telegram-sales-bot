@@ -1,0 +1,8 @@
+venv/
+.env
+orders.db
+database/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
