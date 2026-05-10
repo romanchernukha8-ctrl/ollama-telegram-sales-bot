@@ -50,52 +50,79 @@ The main goal of the project is to showcase:
 │
 └── models/
     └── Modelfile
+```
 
-Features
-AI-powered smartphone recommendations
-Telegram interactive menus
-Product image loading
-Contact validation
-SQLite order storage
-Conversation history support
-Local LLM via Ollama
-Automatic order flow
+---
 
-How It Works
-User interacts with Telegram bot
-Ollama processes user requests and generates responses
-Bot detects smartphone model names
-SerpAPI searches product images
-Customer contacts are validated and stored in SQLite database
+## Features
 
-How to Run
-1. Install dependencies
+* AI-powered smartphone recommendations
+* Telegram interactive menus
+* Product image loading
+* Contact validation
+* SQLite order storage
+* Conversation history support
+* Local LLM via Ollama
+* Automatic order flow
+
+---
+
+## How It Works
+
+1. User interacts with Telegram bot
+2. Ollama processes user requests and generates responses
+3. Bot detects smartphone model names
+4. SerpAPI searches product images
+5. Customer contacts are validated and stored in SQLite database
+
+---
+
+## How to Run
+
+### 1. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-2. Create .env
+### 2. Create `.env`
+
+```env
 BOT_TOKEN=your_telegram_bot_token
 SERPAPI_KEY=your_serpapi_key
+```
 
-3. Create Ollama model
+### 3. Create Ollama model
+
+```bash
 ollama create mobile_sales_bot -f models/Modelfile
+```
 
-4. Run the bot
+### 4. Run the bot
+
+```bash
 python bot.py
+```
 
-Example Features
-Smartphone search
-AI-generated recommendations
-Interactive Telegram buttons
-Automatic order collection
-Product image preview
+---
 
-Future Improvements
-Docker support
-Admin panel
-Multi-language support
-PostgreSQL integration
-Conversation memory improvements
-RAG integration
-Voice message support
-Deployment on VPS
+## Example Features
 
+* Smartphone search
+* AI-generated recommendations
+* Interactive Telegram buttons
+* Automatic order collection
+* Product image preview
+
+---
+
+## Future Improvements
+
+* Docker support
+* Admin panel
+* Multi-language support
+* PostgreSQL integration
+* Conversation memory improvements
+* RAG integration
+* Voice message support
+* Deployment on VPS
